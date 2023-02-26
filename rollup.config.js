@@ -5,9 +5,9 @@ import cdn from 'rollup-plugin-cdn';
 
 export default [
   {
-    input: 'src/router.ts',
+    input: 'src/index.ts',
     output: {
-      file: 'src/router.js',
+      file: 'src/index.js',
       format: 'esm',
     },
     plugins: [

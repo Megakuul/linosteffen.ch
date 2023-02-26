@@ -1,0 +1,96 @@
+<p id="err-title">
+    HTTP: <span>404</span>
+</p>
+
+<code class="err-code">
+    <span>page</span>.<em>notfound();
+ </code>
+
+<code class="err-code">
+    <span>if</span> (<b>you_spelt_it_wrong</b>) {<span>tryagain()</span>;}
+</code class="err-code">
+
+<code class="err-code">
+    <span>else if (<b>its_our_fault</b>)</span> {<em>linosteffen.</em><span>dont_care()</span>};
+</code>
+
+<style>
+@import url("https://fonts.googleapis.com/css?family=Bevan");
+
+body {
+  background: #424549;
+  overflow: hidden;
+}
+
+#err-title {
+  font-family: "Bevan", cursive;
+  font-size: 125px;
+  letter-spacing: 5px;
+  text-align: center;
+  background-color: black;
+  color: transparent;
+  user-select: none;
+  text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.1);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  transition: all ease 0.1s;
+}
+
+.err-code {
+  color: #bdbdbd;
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  margin: 0 30px 25px;
+}
+
+
+.err-code span {
+  color: #ca952a;
+}
+.err-code i {
+  color: #adb44c;
+}
+.err-code em {
+  color: #924ea7;
+  font-style: unset;
+}
+.err-code b {
+  color: #397db8;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 880px) {
+  #err-title {
+    font-size: 14vw;
+  }
+  .err-code {
+    font-size: 14px;
+  }
+}
+</style>
+
+<script>
+    function type(n, t) {
+    var str = document.getElementsByTagName("code")[n].innerHTML.toString();
+    var i = 0;
+    document.getElementsByTagName("code")[n].innerHTML = "";
+
+    setTimeout(function() {
+        var se = setInterval(function() {
+            i++;
+            document.getElementsByTagName("code")[n].innerHTML =
+                str.slice(0, i) + "|";
+            if (i == str.length) {
+                clearInterval(se);
+                document.getElementsByTagName("code")[n].innerHTML = str;
+            }
+        }, 10);
+    }, t);
+}
+
+type(0, 0);
+type(1, 600);
+type(2, 1300);
+</script>

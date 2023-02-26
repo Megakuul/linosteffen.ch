@@ -1,19 +1,31 @@
-let home_loc: string = "Home/Home.html";
-let projekte_loc: string = "Projekte/Projekte.html";
+export class Router {
 
-function loadContent() {
-  $(document).ready(function() {
-    $("#body").load(home_loc, function() {
-        alert("Content loaded")
-      })
+  private navmain: JQuery<HTMLElement>;
+  private body: JQuery<HTMLElement>;
+  private title: JQuery<HTMLElement>;
+
+  constructor(navbarID: string, bodyID: string, titleID: string) {
+    this.navmain = $(navbarID);
+    this.body = $(bodyID);
+    this.title = $(titleID);
+  }
+
+  swtRoute(selectedItem: JQuery<HTMLElement>, page: string, title: string) {
+    this.navmain.children().each(function() {
+      $(this).removeClass("active");
     });
-}
 
-function func() {
-  $("#test1" ).on("click", function() {
-    alert( "Handler for .click() called." );
-  });
-  $("#test2").after(`<h1> Hasdf </h1>`);
-}
+    selectedItem.addClass("active");
 
-func();
+    this.body.load(page, (response, status, xhr) => {
+      if (status == "error") {
+        this.body.load("/src/notfound/notfound.html");
+      }
+    });
+
+    window.history.replaceState(null, title, `/${title}`);
+
+    this.title.html(title);
+  }
+}
+    
