@@ -10,22 +10,34 @@ export class Router {
     this.title = $(titleID);
   }
 
-  swtRoute(selectedItem: JQuery<HTMLElement>, page: string, title: string) {
+  swtRoute(route: Route) {
     this.navmain.children().each(function() {
       $(this).removeClass("active");
     });
 
-    selectedItem.addClass("active");
+    $(`#${route.route}`).addClass("active");
 
-    this.body.load(page, (response, status, xhr) => {
-      if (status == "error") {
-        this.body.load("/src/notfound/notfound.html");
+    let page = `${route.route}/${route.route}.html`;
+    
+    fetch(page).then(response => {
+      if (response.status === 200) {
+        this.body.load(page);
+      } else {
+        this.body.load("notfound/notfound.html");
       }
+    }).catch(error => {
+      this.body.load("notfound/notfound.html");
     });
 
-    window.history.replaceState(null, title, `/${title}`);
+    this.title.html(route.route);
+  }
+}
 
-    this.title.html(title);
+export class Route {
+  public route: string;
+
+  constructor(route: string) {
+    this.route = route;
   }
 }
     
