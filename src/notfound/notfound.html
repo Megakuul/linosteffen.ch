@@ -2,24 +2,25 @@
     HTTP: <span>404</span>
 </p>
 
-<code class="err-code">
+<div class="err-code-div">
+  <code class="err-code">
     <span>page</span>.<em>notfound();
- </code>
+  </code>
 
-<code class="err-code">
+  <code class="err-code">
     <span>if</span> (<b>you_spelt_it_wrong</b>) {<span>tryagain()</span>;}
-</code class="err-code">
+  </code class="err-code">
 
-<code class="err-code">
+  <code class="err-code">
     <span>else if (<b>its_our_fault</b>)</span> {<em>linosteffen.</em><span>dont_care()</span>};
-</code>
+  </code>
+</div>
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Bevan");
 
 body {
-  background: #424549;
-  overflow: hidden;
+  background: #3f4246;
 }
 
 #err-title {
@@ -37,6 +38,10 @@ body {
   transition: all ease 0.1s;
 }
 
+.err-code-div {
+  height: 260px;
+}
+
 .err-code {
   color: #bdbdbd;
   text-align: center;
@@ -44,7 +49,6 @@ body {
   font-size: 20px;
   margin: 0 30px 25px;
 }
-
 
 .err-code span {
   color: #ca952a;

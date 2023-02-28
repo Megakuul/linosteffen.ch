@@ -8,7 +8,7 @@ const firstParam = urlParams.entries().next().value;
 
 const pageRoute = firstParam ? firstParam[0] : null;
 
-let mainroute = new Route(pageRoute);
+let mainroute = pageRoute==null ? new Route("home") : new Route(pageRoute);
 
 router.swtRoute(mainroute);
 
