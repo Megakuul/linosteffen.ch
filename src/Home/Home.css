@@ -1,0 +1,50 @@
+body {
+    background-color: #36393e;
+    color: white;
+}
+
+
+
+#footage-container {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    filter: brightness(40%);
+}
+
+#footage-container #footage-video {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#page-container {
+    margin-top: 30vh;
+    position: fixed;
+    width: 75%;
+    height: 600px;
+    border-radius: 20px;
+    opacity: 0.9;
+    background-color: #3f4246;
+    z-index: 3;
+    /* Center */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	animation: slideDown 5s ease-in-out forwards;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    100% {
+        transform: translate(-50%, -100%);
+    }
+}
