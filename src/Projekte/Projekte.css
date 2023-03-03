@@ -1,0 +1,6 @@
+#body {
+    background-color: black;
+    filter: blur(25px);
+    opacity: 0.5;
+}
+

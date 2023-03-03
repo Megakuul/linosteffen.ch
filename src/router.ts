@@ -20,7 +20,7 @@ export class Router {
     let page = `${route.route}/${route.route}.html`;
     
     fetch(page).then(response => {
-      if (response.status === 200) {
+      if (response.status == 200) {
         this.body.load(page);
       } else {
         this.body.load("notfound/notfound.html");
