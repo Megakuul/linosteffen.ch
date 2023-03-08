@@ -6,7 +6,6 @@
     width: 100%;
     height: auto;
     z-index: 1;
-    animation: blur 1s ease-in-out forwards;
 }
 
 #footage-container #footage-video {
@@ -16,25 +15,86 @@
     height: auto;
 }
 
-#welcome-main {
-    position: absolute;
+.scrollr {
+    margin-top: 20%;
+    position: fixed;
     width: 100%;
-    z-index: 7;
+    z-index: 9;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
+    align-content: center;
 }
 
-#welcome-main #welcome-container {
-    width: 75%;
-    opacity: 0.9;
-    height: 600px;
+.scrollr div {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+}
+
+.main-container {
+    position: relative;
+    width: 100%;
+    z-index: 4;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.main-container div {
+    width: 80%;
+    height: 70vh;
     padding: 20px;
-    background-color: #3f4246;
+    margin: 20px;
+    font-size: larger;
     animation: slide 1s ease-in-out forwards;
-    transform: translateX(-50px);
-    will-change: transform;
+    
+    transition: all ease 2s;
+    background-color: #1e2124;
+}
+
+.main-container .hidden {
+    width: 74%;
+    box-shadow: rgba(235, 41, 163, 0.4) -5px 5px, 
+    rgba(235, 41, 163, 0.3) -10px 10px, 
+    rgba(235, 41, 163, 0.2) -15px 15px, 
+    rgba(235, 41, 163, 0.1) -20px 20px, 
+    rgba(235, 41, 163, 0.05) -25px 25px,
+    rgb(25, 25, 26) 3px 3px 6px 0px inset, 
+    rgba(25, 25, 26, 0.5) -3px -3px 6px 1px inset;
+}
+
+.main-container .show {
+    width: 80%;
+    box-shadow: rgba(235, 41, 163, 0.4) 5px 5px, 
+    rgba(235, 41, 163, 0.3) 10px 10px, 
+    rgba(235, 41, 163, 0.2) 15px 15px, 
+    rgba(235, 41, 163, 0.1) 20px 20px, 
+    rgba(235, 41, 163, 0.05) 25px 25px,
+    rgb(25, 25, 26) 3px 3px 6px 0px inset, 
+    rgba(25, 25, 26, 0.5) -3px -3px 6px 1px inset;
+}
+
+@media screen and (max-width:500px)  {
+    .main-container div {
+        width: 70%;
+        height: 40vh;
+        font-size: large;
+    }
+}
+
+
+#welcome-main div {
+
+}
+
+#whatido-main div {
+
+}
+
+#sponsors-main {
+
 }
 
 #welcome-main #welcome-img {
@@ -46,6 +106,7 @@
     margin: auto;
 }
 
+
 @keyframes slide {
     0% {
         margin-top: 40vh;
@@ -54,14 +115,5 @@
     100% {
         margin-top: 30vh;
         border-radius: 20px;
-    }
-}
-
-@keyframes blur {
-    0% {
-        filter: blur(25px) brightness(20%);
-    }
-    100% {
-        filter: blur(0) brightness(40%);
     }
 }
