@@ -1,14 +1,28 @@
 $(function(){
-  $window = $(window);
-  $window.scroll(function(){
-    var scrollTop = $window.scrollTop();
+  $(window).scroll(function(){
+    let scrollTop = $(window).scrollTop();
+    let docHeight = $(document).height();
+		let winHeight = $(window).height();
+    let scrollPercent = (scrollTop) / (docHeight - winHeight);
+
+
     $maincontainer = $(".main-container")
     val = - scrollTop / 6;
-      $maincontainer.css("transform", 'translateY(' + val + 'px)');
+    $maincontainer.css("transform", 'translateY(' + val + 'px)');
 
     $scrollr = $(".scrollr")
-    val = - scrollTop / 4;
-      $scrollr.css("transform", 'translateY(' + val + 'px)');
+    val2 = (docHeight - 200) * scrollPercent;
+
+
+    if (scrollPercent < 1/20) {
+      
+    } else if (scrollPercent > 19/20) {
+
+    } else {
+      $scrollr.css("display", "grid");
+      $scrollr.css("top", val2 + 'px');
+    }
+    
   });
 })
 
