@@ -4,3 +4,16 @@ body {
 	background-color: black;
 	color: white;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Ubuntu:wght@500&display=swap');
+
+h1 {
+	text-align: center;
+	opacity: 0.8;
+	font-family: 'Kanit', sans-serif;
+}
+
+p {
+	font-family: 'Kanit', sans-serif;
+	font-weight: 500;
+}

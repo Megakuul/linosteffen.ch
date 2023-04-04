@@ -1,6 +1,6 @@
 <script>
     import Intersector from './lib/Intersecting.svelte'
-
+    import Hoverable from './lib/Hoverable.svelte';
 </script>
 
 
@@ -9,25 +9,36 @@
 </div>
 
 <Intersector>
-    <div class="main-container">
-        <div id="welcome-container" class="intersect">
-          Hallo
+    <div class="main-container" style="margin-top: 0;">
+        <div class="intersect">
+            <h1>Willkommen</h1>
+            <p>
+                Ich bin Lino Steffen<br><br><br><br>
+                Ich bin ein leidenschaftlicher <Hoverable text="Video Creator" alt="Video Creator Meme" gifsrc="/fotograf.gif" color="red" />
+                und <Hoverable text="Fotograf" alt="Fotograf Meme" gifsrc="/fotograf.gif" color="lightblue" />
+            </p>
         </div>
     </div>
 </Intersector>
 
 <Intersector>
     <div class="main-container">
-        <div id="whatido-container" class="intersect">
-          Hallo
+        <div class="intersect">
+            <h1>Aktuelles</h1>
+            <p>
+
+            </p>
         </div>
     </div>
 </Intersector>
 
 <Intersector>
     <div class="main-container">
-        <div id="sponsors-container" class="intersect">
-            Hallo
+        <div class="intersect">
+            <h1>Sponsoren</h1>
+            <p>
+                
+            </p>
         </div>    
     </div>
 </Intersector> 
@@ -40,11 +51,10 @@
 
     .intersecting div .intersect {
         width: 80%;
-        box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.5) -3px -3px 6px 1px inset;
+        transform: scale(1);
     }
 
     .main-container {
-        position: relative;
         width: 100%;
         z-index: 4;
         overflow: hidden;
@@ -54,13 +64,17 @@
     } 
 
     .main-container div {
-        height: 70vh;
         padding: 20px;
-        font-size: larger;
-        margin: 50px 0px 50px 0px;
+        text-align: center;
+        margin: 40vh 0 40vh 0;
         transition: all ease 2s;
-        background-color: #1e2124;
         width: 70%;
-        box-shadow: 0px
+        transform: scale(0.7);
+    }
+
+    .main-container div span {
+        color: red;
+        font-weight: 600;
+        font-size: small;
     }
 </style>
