@@ -1,8 +1,9 @@
 <script>
     export let setActivePage;
+    export let toggleTrailerOpacity;
 </script>
 
-<img class="nav-ls" src="./icon.png" width="30" height="30" alt="Lino Steffen Logo"/>
+<img class="nav-ls" src="./icon.png" width="40" height="40" alt="Lino Steffen Logo" on:click={toggleTrailerOpacity}/>
 <div class="nav-bar"></div>
 <input type="checkbox" id="active">
 <label for="active" class="nav-btn"><span></span></label>

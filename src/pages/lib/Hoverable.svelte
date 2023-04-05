@@ -9,7 +9,7 @@
 
     function onMouseMove(event) {
         const rect = event.currentTarget;
-        hoverImage.style.top = `${event.pageY - 100}px`;
+        hoverImage.style.top = `${event.pageY+10}px`;
         hoverImage.style.left = `${event.pageX}px`;
     }
 
@@ -23,6 +23,7 @@
         hoverImage.style.pointerEvents = 'none';
         hoverImage.style.display = 'none';
         hoverImage.style.zIndex = '100';
+        hoverImage.style.overflow = 'hidden';
         document.body.appendChild(hoverImage);
     }
 
@@ -48,6 +49,7 @@
         position: relative;
         text-decoration: none;
         display: inline;
+        overflow: hidden;
     }
     .hover-text {
         font-weight: 600;

@@ -6,10 +6,32 @@
 	import Projekte from './pages/Projekte.svelte';
 	import Medien from './pages/Medien.svelte';
 	import About from './pages/Aboutme.svelte';
+    import Trailer from './pages/lib/Trailer.svelte';
 
 	const urlParams = new URLSearchParams(window.location.search);	
 	const firstParam = urlParams.entries().next().value;	
 	let ActivePage = firstParam ? firstParam[0] : null;
+
+	let trailerOpacity;
+
+	const isTouchDevice = () => {
+		return (('ontouchstart' in window) ||
+			(navigator.maxTouchPoints > 0) ||
+			(navigator.maxTouchPoints > 0));
+	}
+
+	if (isTouchDevice()) {
+		trailerOpacity = 0;
+	} else {
+		trailerOpacity = 1;
+	}
+
+    const toggleTrailerOpacity = () => {
+        if (trailerOpacity==1)
+            trailerOpacity = 0;
+        else
+            trailerOpacity = 1;
+    }
 
 	const setActivePage = (page) => {
 		ActivePage = page;
@@ -45,7 +67,9 @@
 	});
 </script>
 
-<Navbar {setActivePage} />
+<Trailer opacity={trailerOpacity} />
+
+<Navbar setActivePage="{setActivePage}" toggleTrailerOpacity="{toggleTrailerOpacity}" />
   
 <svelte:component this="{loadPageComponent(ActivePage)}" />
 	  
