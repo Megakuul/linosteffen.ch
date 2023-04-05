@@ -35,6 +35,7 @@
     }
     
     #inner-trailer {
+        z-index: 0;
         height: 120px;
         width: 120px;
         background-image: linear-gradient(to right, white, blue);

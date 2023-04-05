@@ -51,6 +51,7 @@
         background-color: white;
         border-radius: 12px;
         cursor: pointer;
+        user-select: none;
     }
 
     .nav-ls:hover {
