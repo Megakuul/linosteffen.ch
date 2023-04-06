@@ -6,6 +6,7 @@
 	import Projekte from './pages/Projekte.svelte';
 	import Medien from './pages/Medien.svelte';
 	import About from './pages/Aboutme.svelte';
+	import Impressum from './pages/Impressum.svelte';
     import Trailer from './pages/lib/Trailer.svelte';
 
 	const urlParams = new URLSearchParams(window.location.search);	
@@ -49,6 +50,8 @@
 			return Medien;
 			case 'About':
 			return About;
+			case 'Impressum':
+			return Impressum;
 			default:
 			return Home;
 		}
@@ -73,7 +76,7 @@
   
 <svelte:component this="{loadPageComponent(ActivePage)}" />
 	  
-<Footer />
+<Footer setActivePage="{setActivePage}"/>
 
 <style>
 

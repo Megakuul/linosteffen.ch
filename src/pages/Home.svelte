@@ -1,24 +1,13 @@
 <script>
-    import { setContext } from 'svelte';
     import Intersector from './lib/Intersecting.svelte'
     import Hoverable from './lib/Hoverable.svelte';
-    import Trailer from './lib/Trailer.svelte'
+    import Title from './lib/Title.svelte';
 
     
 </script>
 
 <div id="title">
-    <span style="--i:1">L</span>
-    <span style="--i:2">i</span>
-    <span style="--i:3">n</span>
-    <span style="--i:4">o</span>
-    <span style="--i:5">S</span>
-    <span style="--i:6">t</span>
-    <span style="--i:7">e</span>
-    <span style="--i:8">f</span>
-    <span style="--i:9">f</span>
-    <span style="--i:10">e</span>
-    <span style="--i:11">n</span>
+    <Title text="Lino Steffen"/>
 </div>
 
 <!-- Generated with softr.io -->
@@ -82,28 +71,43 @@
 
 
 <style>
-
-    /* TODO: Extract into svelte component */
+    /* Title resizing */
     #title {
-        z-index: 8;
+        z-index: 6;
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 400px;
-        font-size: 100px;
-        font-weight: 600;
+        width: 100%;
+        top: 30%;
         user-select: none;
         cursor: pointer;
+
+        font-family: verdana;
+        font-size: 8rem;
+        font-weight: 700;
+        transition: all linear 1s;
     }
 
-    #title span {
-        font-family: 'Raleways', sans-serif;
-        display: inline-block;
-        color: #fff;
-        text-transform: uppercase;
-        animation: waviy 1s;
-        animation-delay: calc(.1s * var(--i));
+    @media only screen and (min-width: 1800px) {
+        #title {
+            font-size: 10rem;
+            top: 40%;
+        }
     }
+
+    @media only screen and (max-width: 1000px) {
+        #title {
+            font-size: 4rem;
+            top: 22%;
+        }
+    }
+
+    @media only screen and (max-width: 575px) {
+        #title {
+            font-size: 2rem;
+            top: 12%;
+        }
+    }
+
+    /* Title resizing */
 
     @keyframes wave {
         0%,40%,100% {

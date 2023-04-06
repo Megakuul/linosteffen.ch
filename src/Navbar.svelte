@@ -3,6 +3,7 @@
     export let toggleTrailerOpacity;
 </script>
 
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <img class="nav-ls" src="./icon.png" width="40" height="40" alt="Lino Steffen Logo" on:click={toggleTrailerOpacity}/>
 <div class="nav-bar"></div>
 <input type="checkbox" id="active">
@@ -33,7 +34,7 @@
 <style>
     /* Navigation Bar */
     .nav-bar {
-        z-index: 7;
+        z-index: 8;
         position: fixed;
         height: 70px;
         width: 100%;

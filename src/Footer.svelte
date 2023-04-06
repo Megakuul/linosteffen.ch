@@ -1,3 +1,7 @@
+<script lang="ts">
+    export let setActivePage;
+</script>
+
 <footer class="footer">
     <div class="socials">
         <a href="https://www.youtube.com/@linosteffen" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -7,10 +11,14 @@
         <a href="https://www.facebook.com/lino.steffen.33" target="_blank"><i class="fab fa-facebook"></i></a>
         <a href="https://github.com/LinoSteffen" target="_blank"><i class="fab fa-github"></i></a>
     </div>
+    <!-- svelte-ignore a11y-missing-attribute -->
     <div class="links">
-        <a href="">Home</a>
-        <a href="#">About</a>
-        <a href="#">Impressum</a>
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <div on:click={() => setActivePage('Home')}>Home</div>
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <div on:click={() => setActivePage('About')}>About</div>
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <div on:click={() => setActivePage('Impressum')}>Impressum</div>
     </div>
     <p class="copyright">Lino Steffen © 2023</p>
 </footer>
@@ -61,20 +69,21 @@
         font-size:18px;
         line-height:1.6;
         margin-bottom:20px;
+        cursor: pointer;
     }
 
-    .footer .links > a {
+    .footer .links > div {
         padding:0 10px;
     }
 
-    .footer .links > a {
+    .footer .links > div {
         color:inherit;
         text-decoration:none;
         opacity:0.7;
         transition: all ease 0.5s;
     }
 
-    .footer .links > a:hover {
+    .footer .links > div:hover {
         opacity:1;
     }
 
