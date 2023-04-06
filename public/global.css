@@ -16,10 +16,18 @@ h1 {
 	transition: all ease .3s;
 }
 
+h2 {
+	text-align: center;
+	opacity: 0.8;
+	font-family: 'Kanit', sans-serif;
+	font-size: 32px;
+	transition: all ease .3s;
+}
+
 p {
 	font-family: 'Kanit', sans-serif;
 	font-weight: 500;
-	font-size: 30px;
+	font-size: 25px;
 	transition: all ease .3s;
 }
 
@@ -30,6 +38,9 @@ p {
 	h1 {
 		font-size: 30px;
 	}
+	h2 {
+		font-size: 25px;
+	}
 }
 
 @media only screen and (min-width: 1800px) {
@@ -38,5 +49,8 @@ p {
 	}
 	h1 {
 		font-size: 50px;
+	}
+	h2 {
+		font-size: 45px;
 	}
 }

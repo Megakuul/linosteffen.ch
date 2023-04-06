@@ -3,7 +3,16 @@
     import Hoverable from './lib/Hoverable.svelte';
     import Title from './lib/Title.svelte';
 
-    
+    import { onMount } from "svelte";
+
+    /// The Sponsor images are found inside the /sponsor url, the config can be found inside the sponsors.json file
+    /// This file gets loaded into this variable
+    let sponsors = [];
+
+    onMount(async () => {
+        const response = await fetch("/sponsors.json");
+        sponsors = await response.json();
+    });
 </script>
 
 <div id="title">
@@ -60,10 +69,16 @@
 <Intersector>
     <div class="main-container">
         <div class="intersect">
-            <h1>Sponsoren</h1>
-            <p>
-                
-            </p>
+            <h1>Partners in Success</h1>
+            <div class="sponsor-list">
+                {#each sponsors as sponsor}
+                    <a href="{sponsor.lnk}">
+                        <div class="sponsor-bx">
+                            <img src="{sponsor.src}" alt="{sponsor.alt}" style="filter: invert({sponsor.invert});"/>
+                        </div>
+                    </a>
+                {/each}
+            </div>
             <img src=/icon.png width="25" alt="Lino Steffen Icon">
         </div>    
     </div>
@@ -174,11 +189,11 @@
         margin-top: 10vh;
     }
 
-    .main-container img {
+    .main-container > div > img {
         filter: invert(1);
     }
 
-    .main-container div {
+    .main-container > div {
         padding: 20px;
         text-align: center;
         margin: 20vh 0 20vh 0;
@@ -186,4 +201,24 @@
         width: 70%;
         transform: scale(0.7);
     }
+
+    .main-container .sponsor-list {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 10vh;
+    }
+
+    .main-container .sponsor-list .sponsor-bx {
+        padding: 25px;
+        transition: all ease 1s;
+    }
+
+    .main-container .sponsor-list img {
+        width: 150px;
+    }
+
 </style>
