@@ -15,6 +15,10 @@
 
 	let trailerOpacity;
 
+	let navbarStore = {
+		NavbarState: false
+	};
+
 	const isTouchDevice = () => {
 		return (('ontouchstart' in window) ||
 			(navigator.maxTouchPoints > 0) ||
@@ -35,6 +39,8 @@
     }
 
 	const setActivePage = (page) => {
+		navbarStore.NavbarState = false;
+		
 		ActivePage = page;
 		window.history.pushState({}, '', `?${page}`);
 		loadPageComponent(ActivePage);
@@ -72,7 +78,7 @@
 
 <Trailer opacity={trailerOpacity} />
 
-<Navbar setActivePage="{setActivePage}" toggleTrailerOpacity="{toggleTrailerOpacity}" />
+<Navbar setActivePage="{setActivePage}" toggleTrailerOpacity="{toggleTrailerOpacity}" navbarStateStore="{navbarStore}"/>
   
 <svelte:component this="{loadPageComponent(ActivePage)}" />
 	  
