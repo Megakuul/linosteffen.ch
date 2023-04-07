@@ -5,8 +5,6 @@
 
     import { onMount } from "svelte";
 
-    /// The Sponsor images are found inside the /sponsor url, the config can be found inside the sponsors.json file
-    /// This file gets loaded into this variable
     let sponsors = [];
 
     onMount(async () => {
@@ -46,7 +44,7 @@
             <p>
                 In meiner Freizeit bin ich oft mit der Kamera oder am Computer zu finden
             </p>
-            <img src=/icon.png width="25" alt="Lino Steffen Icon">
+            <img class="ls-icon" src=/icon.png width="25" alt="Lino Steffen Icon">
         </div>
     </div>
 </Intersector>
@@ -61,7 +59,7 @@
             <p>
 
             </p>
-            <img src=/icon.png width="25" alt="Lino Steffen Icon">
+            <img class="ls-icon" src=/icon.png width="25" alt="Lino Steffen Icon">
         </div>
     </div>
 </Intersector>
@@ -79,7 +77,7 @@
                     </a>
                 {/each}
             </div>
-            <img src=/icon.png width="25" alt="Lino Steffen Icon">
+            <img class="ls-icon" src=/icon.png width="25" alt="Lino Steffen Icon">
         </div>    
     </div>
 </Intersector> 
@@ -189,7 +187,7 @@
         margin-top: 10vh;
     }
 
-    .main-container > div > img {
+    .main-container > div > .ls-icon {
         filter: invert(1);
     }
 

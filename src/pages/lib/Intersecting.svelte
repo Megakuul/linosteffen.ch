@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte';
 
   let intersecting = false;
@@ -8,7 +8,6 @@
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         intersecting = entry.isIntersecting;
-        
       });
     });
 

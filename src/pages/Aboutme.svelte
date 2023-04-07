@@ -1,60 +1,40 @@
-<script>
+<script lang="ts">
+    import { onMount } from 'svelte';
     import Intersector from './lib/Intersecting.svelte'
     import Hoverable from './lib/Hoverable.svelte';
     import Timeline from './lib/Timeline.svelte';
 
-    let timelineConfig = {
-        items: [
-            {
-                year: "1920",
-                content: "Lino ist ein Dinosaurier geworden",
-                image: "/sponsors/bb.png",
-                alt: "Exampleimage"
-            },
-            {
-                year: "1944",
-                content: "Dinosaurier sind ausgestorben",
-                image: "/sponsors/bb.png",
-                alt: "Exampleimage"
-            },
-            {
-                year: "1999",
-                content: "Ein Jahr vor dem Jahr 2000",
-                image: "/sponsors/bb.png",
-                alt: "Exampleimage"
-            },
-            {
-                year: "2009",
-                content: "Der erste Fotographierende Saurier wurde gesichtet",
-                image: "/sponsors/bb.png",
-                alt: "Exampleimage"
-            },
-            {
-                year: "2023",
-                content: "Lino hat Zahnschmerzen",
-                image: "/sponsors/bb.png",
-                alt: "Exampleimage"
-            },
-        ]
-    };
+
+    let timelineConfig = [];
+
+    onMount(async () => {
+        const response = await fetch("/timeline.json");
+        timelineConfig = await response.json();
+    });
 </script>
 
 <Intersector>
     <div class="main-container" style="margin-top: 0;">
         <div class="intersect">
-            <h1>Willkommen</h1>
+            <h1>Über mich</h1>
             <p>
                 Ich bin Lino Steffen
             </p>
+            <div class="portrait-bx">
+                <img class="portrait" src="/assets/portrait.png" alt="Lino Steffen Portrait">
+            </div>
             <p>
-                Leidenschaftlicher <Hoverable text="Video Creator" alt="Video Creator Meme" gifsrc="/videoediting.gif" color="red" />
-                und <Hoverable text="Fotograf" alt="Fotograf Meme" gifsrc="/fotograf.png" color="lightblue" />
-                aus Burgdorf in Bern
+                Telefon: +41 77 498 87 23<br>
+                Email: info@linosteffen.ch
             </p>
             <p>
-                In meiner Freizeit bin ich oft mit der Kamera oder am Computer zu finden
+                Ich erstelle Werbevideos/Filme oder Fotos
             </p>
-            <img src=/icon.png width="25" alt="Lino Steffen Icon">
+            <p>
+                Bei Interesse meldet euch direkt per Mail<br>
+                Ich freue mich auf eine gute Zusammenarbeit                
+            </p>
+            <img class="ls-icon" src=/icon.png width="25" alt="Lino Steffen Icon">
         </div>
     </div>
 </Intersector>
@@ -79,42 +59,45 @@
     }
 
     .main-container h1 {
-        margin-bottom: 20vh;
+        margin-bottom: 10vh;
     }
 
     .main-container p {
-        margin-top: 10vh;
+        margin-top: 5vh;
     }
 
-    .main-container > div > img {
+    .main-container > div > .ls-icon {
         filter: invert(1);
     }
 
     .main-container > div {
         padding: 20px;
         text-align: center;
-        margin: 20vh 0 20vh 0;
+        margin: 10vh 0 20vh 0;
         transition: all ease 2s;
         width: 70%;
         transform: scale(0.7);
     }
 
-    .main-container .sponsor-list {
-        width: 100%;
+    .main-container .portrait-bx {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-bottom: 10vh;
+        justify-content: center;
     }
 
-    .main-container .sponsor-list .sponsor-bx {
-        padding: 25px;
+    .main-container .portrait {
+        height: 500px;
         transition: all ease 1s;
+        opacity: 0.8;
     }
 
-    .main-container .sponsor-list img {
-        width: 150px;
+    .main-container .portrait:hover {
+        opacity: 1;
+        filter: drop-shadow(0 -5px 5px rgba(255, 255, 255, 0.5));
+    }
+
+    @media screen and (max-width: 1100px) {
+        .main-container .portrait {
+            height: 300px;
+        }
     }
 </style>

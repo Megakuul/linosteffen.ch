@@ -1,16 +1,20 @@
 <script lang="ts">
+    import Intersecting from "./Intersecting.svelte";
     export let timelineconfiguration;
 </script>
 
 <div class="timeline">
-    {#each timelineconfiguration.items as item}
-        <h2 class="timeline-item timeline-item-year">{item.year}</h2>
-        
+    {#each timelineconfiguration as item}
+        <h2 class="timeline-item-year">{item.year}</h2>
         <div class="timeline-item">
-            <img src="{item.image}" alt="{item.alt}" style="max-width: 100%;">
-            <h3 class="timeline-title">{item.content}</h3>
+            <Intersecting>
+                <div class="timeline-intersected">
+                    <img src="{item.image}" alt="{item.alt}" style="max-width: 100%;">
+                    <h3 class="timeline-title">{item.content}</h3>
+                </div>
+            </Intersecting>
         </div>
-    {/each}
+  {/each}
 </div>
 
 
@@ -23,18 +27,17 @@
     }
     .timeline:before {
         content: "";
+        z-index: 0;
+
         position: absolute;
-        height: 100%;
-        border: 1px solid hotpink;
-        right: 40px;
         top: 0;
+        height: 100%;
+        right: 40px;
+
+        border: 1px solid white;
+        border-radius: 25px;
     }
-    .timeline:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1100px) {
         .timeline {
             padding: 2rem;
         }
@@ -45,79 +48,97 @@
     }
 
     .timeline-item {
-        padding: 1rem;
-        border: 2px solid hotpink;
-        border-image: linear-gradient(to right, skyblue 0%, hotpink 100%);
+        border: 2px solid;
+        border-image: linear-gradient(to right, rgb(135, 145, 235) 0%, white 100%);
         border-image-slice: 1;
+
         position: relative;
         margin: 1rem 3rem 1rem 1rem;
+        padding: 1rem;
+
         clear: both;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
+
     .timeline-item:after, .timeline-item:before {
         content: "";
         position: absolute;
     }
+
+    /* Befor element resembles the triangle (pointer) attached to the item */
     .timeline-item:before {
         right: -10px;
         top: calc(50% - 5px);
-        border-style: solid;
-        border-color: hotpink hotpink transparent transparent;
-        border-width: 10px;
         transform: rotate(45deg);
+
+        border-style: solid;
+        border-color: white white transparent transparent;
+        border-width: 10px;
     }
-    @media screen and (min-width: 700px) {
+    /* Befor element resembles the triangle (pointer) attached to the item */
+
+    @media screen and (min-width: 1100px) {
         .timeline-item {
             width: 44%;
             margin: 1rem;
         }
+        /* Selects every 2nd element */
         .timeline-item:nth-of-type(2n) {
             float: right;
             margin: 1rem;
-            border-image: linear-gradient(to right, hotpink 0%, skyblue 100%);
+            border-image: linear-gradient(to right, white 0%, rgb(135, 145, 235) 100%);
             border-image-slice: 1;
         }
+        /* Befor element resembles the triangle (pointer) attached to the item */
         .timeline-item:nth-of-type(2n):before {
             right: auto;
             left: -10px;
-            border-color: transparent transparent hotpink hotpink;
+            border-color: transparent transparent white white;
         }
+        /* Selects every 2nd element */
+    }
+
+    .timeline-intersected {
+        scale: 0.7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: all ease 2s;
+    }
+
+    .timeline-item .intersecting .timeline-intersected {
+        scale: 1;
     }
 
     .timeline-item-year {
         text-align: center;
+        font-size: 2rem;
+        overflow: hidden;
+
         max-width: 150px;
-        margin: 0 48px 0 auto;
-        font-size: 1.8rem;
-        background-color: #333;
-        line-height: 1;
-        border-image: none;
-        padding: 0.5rem 1rem 1rem;
+        padding: 1rem;
+        margin-left: 1rem;
+        margin-right: 3rem;
+        
+        background-color: #36393e;
+        border: 2px solid;
+
+        /* Disables Floating items (left + right) */
+        clear: both;
     }
-    .timeline-item-year:before {
-        display: none;
-    }
-    @media screen and (min-width: 700px) {
+
+    @media screen and (min-width: 1100px) {
         .timeline-item-year {
-            text-align: center;
-            margin: 0 auto;
-        }
-        .timeline-item-year:nth-of-type(2n) {
-            float: none;
-            margin: 0 auto;
-            border-image: none;
-        }
-        .timeline-item-year:nth-of-type(2n):before {
-            display: none;
+            margin: auto;
         }
     }
 
     .timeline-title {
+        overflow: hidden;
         text-align: center;
+        white-space: pre-wrap;
         margin: 0;
+        margin-top: 1rem;
         font-family: "Raleway", sans-serif;
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
 </style>

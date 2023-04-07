@@ -1,76 +1,75 @@
 [
     {
-        "src": "/sponsors/kitiko.png",
+        "src": "/assets/sponsors/kitiko.png",
         "alt": "Kitiko People Logo",
         "lnk": "https://kitoko-people.ch/",
         "invert": 1
     },
     {
-        "src": "/sponsors/domainedelenfer.png",
+        "src": "/assets/sponsors/domainedelenfer.png",
         "alt": "Domaine de Lenfer Logo",
         "lnk": "https://rotenweine.ch/",
         "invert": 1
     },
     {
-        "src": "/sponsors/kircheburgdorf.png",
+        "src": "/assets/sponsors/kircheburgdorf.png",
         "alt": "Reformierte Kirche Burgdorf Logo",
         "lnk": "https://www.ref-kirche-burgdorf.ch/home/",
         "invert": 0
     },
     {
-        "src": "/sponsors/schreibblockade.jpg",
+        "src": "/assets/sponsors/schreibblockade.jpg",
         "alt": "Schreibblockade Logo",
         "lnk": "https://charlesthormann.wixsite.com/schreibblockade",
         "invert": 0
     },
     {
-        "src": "/sponsors/jububern.png",
+        "src": "/assets/sponsors/jububern.png",
         "alt": "Jugend Burgergemeinde Bern Logo",
         "lnk": "https://jububern.ch/",
         "invert": 0
     },
     {
-        "src": "/sponsors/bb.png",
+        "src": "/assets/sponsors/bb.png",
         "alt": "Schule für Gestaltung Bern und Biel Logo",
         "lnk": "https://sfgb-b.ch/",
         "invert": 1
     },
     {
-        "src": "/sponsors/jungbolt.png",
+        "src": "/assets/sponsors/jungbolt.png",
         "alt": "Junge Burgergemeinde Bern Logo",
         "lnk": "https://jububern.ch/jungbott/",
         "invert": 0
     },
     {
-        "src": "/sponsors/burgergemeindebern.svg",
+        "src": "/assets/sponsors/burgergemeindebern.svg",
         "alt": "Burgergemeinde Bern Logo",
         "lnk": "https://www.bgbern.ch/",
         "invert": 1
     },
     {
-        "src": "/sponsors/jubu.png",
+        "src": "/assets/sponsors/jubu.png",
         "alt": "Jugend Burgdorf Logo",
         "lnk": "https://jugend.burgdorf.ch/jubu/index.php",
         "invert": 1
     },
     {
-        "src": "/sponsors/ypsomed.png",
+        "src": "/assets/sponsors/ypsomed.png",
         "alt": "YPSOMED Selfcare Solutions Logo",
         "lnk": "https://www.ypsomed.com/de/",
         "invert": 0
     },
     {
-        "src": "/sponsors/planetary.jpg",
+        "src": "/assets/sponsors/planetary.jpg",
         "alt": "Planetary Logo",
         "lnk": "https://www.planetarygroup.ch/",
         "invert": 0
     },
     {
-        "src": "/sponsors/localnet.png",
+        "src": "/assets/sponsors/localnet.png",
         "alt": "Localnet Logo",
         "lnk": "https://www.localnet.ch/",
         "invert": 0
     }
-
 ]
   
