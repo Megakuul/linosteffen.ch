@@ -1,0 +1,123 @@
+<script lang="ts">
+    export let timelineconfiguration;
+</script>
+
+<div class="timeline">
+    {#each timelineconfiguration.items as item}
+        <h2 class="timeline-item timeline-item-year">{item.year}</h2>
+        
+        <div class="timeline-item">
+            <img src="{item.image}" alt="{item.alt}" style="max-width: 100%;">
+            <h3 class="timeline-title">{item.content}</h3>
+        </div>
+    {/each}
+</div>
+
+
+<style>
+    .timeline {
+        position: relative;
+        padding: 1rem;
+        margin: 0 auto;
+        max-width: 1300px;
+    }
+    .timeline:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        border: 1px solid hotpink;
+        right: 40px;
+        top: 0;
+    }
+    .timeline:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    @media screen and (min-width: 700px) {
+        .timeline {
+            padding: 2rem;
+        }
+        .timeline:before {
+            left: calc(50% - 1px);
+            right: auto;
+        }
+    }
+
+    .timeline-item {
+        padding: 1rem;
+        border: 2px solid hotpink;
+        border-image: linear-gradient(to right, skyblue 0%, hotpink 100%);
+        border-image-slice: 1;
+        position: relative;
+        margin: 1rem 3rem 1rem 1rem;
+        clear: both;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .timeline-item:after, .timeline-item:before {
+        content: "";
+        position: absolute;
+    }
+    .timeline-item:before {
+        right: -10px;
+        top: calc(50% - 5px);
+        border-style: solid;
+        border-color: hotpink hotpink transparent transparent;
+        border-width: 10px;
+        transform: rotate(45deg);
+    }
+    @media screen and (min-width: 700px) {
+        .timeline-item {
+            width: 44%;
+            margin: 1rem;
+        }
+        .timeline-item:nth-of-type(2n) {
+            float: right;
+            margin: 1rem;
+            border-image: linear-gradient(to right, hotpink 0%, skyblue 100%);
+            border-image-slice: 1;
+        }
+        .timeline-item:nth-of-type(2n):before {
+            right: auto;
+            left: -10px;
+            border-color: transparent transparent hotpink hotpink;
+        }
+    }
+
+    .timeline-item-year {
+        text-align: center;
+        max-width: 150px;
+        margin: 0 48px 0 auto;
+        font-size: 1.8rem;
+        background-color: #333;
+        line-height: 1;
+        border-image: none;
+        padding: 0.5rem 1rem 1rem;
+    }
+    .timeline-item-year:before {
+        display: none;
+    }
+    @media screen and (min-width: 700px) {
+        .timeline-item-year {
+            text-align: center;
+            margin: 0 auto;
+        }
+        .timeline-item-year:nth-of-type(2n) {
+            float: none;
+            margin: 0 auto;
+            border-image: none;
+        }
+        .timeline-item-year:nth-of-type(2n):before {
+            display: none;
+        }
+    }
+
+    .timeline-title {
+        text-align: center;
+        margin: 0;
+        font-family: "Raleway", sans-serif;
+        font-size: 1.5em;
+    }
+</style>
