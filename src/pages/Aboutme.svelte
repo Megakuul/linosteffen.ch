@@ -28,7 +28,7 @@
                 Email: info@linosteffen.ch
             </p>
             <p>
-                Ich erstelle Werbevideos/Filme oder Fotos
+                Ich erstelle kreative Werbevideos, Filme oder Fotos<br>für einzigartige Momente
             </p>
             <p>
                 Bei Interesse meldet euch direkt per Mail<br>

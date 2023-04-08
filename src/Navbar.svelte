@@ -42,7 +42,7 @@
         </div>
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <div id="About" class="nav-item" on:click={() => setActivePage('About')}>
-          Über mich
+          About
         </div>
     </div>
 </div>

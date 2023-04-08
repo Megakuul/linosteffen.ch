@@ -1,0 +1,170 @@
+[
+    {
+        "title": "Portraits",
+        "content": [
+            {
+              "src": "/assets/timeline/2021.jpeg",
+              "iframe": false
+            },
+            {
+              "youtubeid": "YaEG2aWJnZ8",
+              "iframe": true
+            },
+            {
+              "src": "/assets/timeline/2008.jpeg",
+              "iframe": false
+            },
+            {
+              "youtubeid": "YaEG2aWJnZ8",
+              "iframe": true
+            }
+        ]
+    },
+    {
+        "title": "Autos",
+        "content": [
+            {
+              "src": "/assets/timeline/2021.jpeg",
+              "iframe": false
+            },
+            {
+              "youtubeid": "YaEG2aWJnZ8",
+              "iframe": true
+            },
+            {
+              "src": "/assets/timeline/2008.jpeg",
+              "iframe": false
+            },
+            {
+              "youtubeid": "YaEG2aWJnZ8",
+              "iframe": true
+            }
+        ]
+    },
+    {
+        "title": "Flugzeuge",
+        "content": [
+            {
+              "src": "/assets/timeline/2021.jpeg",
+              "iframe": false
+            },
+            {
+              "youtubeid": "YaEG2aWJnZ8",
+              "iframe": true
+            },
+            {
+              "src": "/assets/timeline/2008.jpeg",
+              "iframe": false
+            },
+            {
+              "youtubeid": "YaEG2aWJnZ8",
+              "iframe": true
+            }
+        ]
+    },
+    {
+        "title": "Landschaften",
+        "content": [
+            {
+              "src": "/assets/timeline/2021.jpeg",
+              "iframe": false
+            },
+            {
+              "youtubeid": "YaEG2aWJnZ8",
+              "iframe": true
+            },
+            {
+              "src": "/assets/timeline/2008.jpeg",
+              "iframe": false
+            },
+            {
+              "youtubeid": "YaEG2aWJnZ8",
+              "iframe": true
+            }
+        ]
+    },
+    {
+        "title": "Luftaufnahmen",
+        "content": [
+            {
+              "src": "/assets/timeline/2021.jpeg",
+              "iframe": false
+            },
+            {
+              "youtubeid": "YaEG2aWJnZ8",
+              "iframe": true
+            },
+            {
+              "src": "/assets/timeline/2008.jpeg",
+              "iframe": false
+            },
+            {
+              "youtubeid": "YaEG2aWJnZ8",
+              "iframe": true
+            }
+        ]
+    },
+    {
+        "title": "Tiere",
+        "content": [
+            {
+              "src": "/assets/timeline/2021.jpeg",
+              "iframe": false
+            },
+            {
+              "youtubeid": "YaEG2aWJnZ8",
+              "iframe": true
+            },
+            {
+              "src": "/assets/timeline/2008.jpeg",
+              "iframe": false
+            },
+            {
+              "youtubeid": "YaEG2aWJnZ8",
+              "iframe": true
+            }
+        ]
+    },
+    {
+        "title": "Momentaufnahmen",
+        "content": [
+            {
+              "src": "/assets/timeline/2021.jpeg",
+              "iframe": false
+            },
+            {
+              "youtubeid": "YaEG2aWJnZ8",
+              "iframe": true
+            },
+            {
+              "src": "/assets/timeline/2008.jpeg",
+              "iframe": false
+            },
+            {
+              "youtubeid": "YaEG2aWJnZ8",
+              "iframe": true
+            }
+        ]
+    },
+    {
+        "title": "Videos",
+        "content": [
+            {
+              "src": "/assets/timeline/2021.jpeg",
+              "iframe": false
+            },
+            {
+              "youtubeid": "YaEG2aWJnZ8",
+              "iframe": true
+            },
+            {
+              "src": "/assets/timeline/2008.jpeg",
+              "iframe": false
+            },
+            {
+              "youtubeid": "YaEG2aWJnZ8",
+              "iframe": true
+            }
+        ]
+    }
+]

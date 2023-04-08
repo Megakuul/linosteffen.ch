@@ -34,15 +34,13 @@
         <div class="intersect">
             <h1>Willkommen</h1>
             <p>
-                Ich bin Lino Steffen
+                Willkommen bei Lino Steffen
             </p>
             <p>
-                Leidenschaftlicher <Hoverable text="Video Creator" alt="Video Creator Meme" gifsrc="/videoediting.gif" color="red" />
-                und <Hoverable text="Fotograf" alt="Fotograf Meme" gifsrc="/fotograf.png" color="lightblue" />
-                aus Burgdorf in Bern
+                Ihrem passionierten Video Creator und Fotografen aus Burgdorf in Bern
             </p>
             <p>
-                In meiner Freizeit bin ich oft mit der Kamera oder am Computer zu finden
+                Erleben Sie die Welt durch meine Linse und entdecken Sie neue Perspektiven
             </p>
             <img class="ls-icon" src=/icon.png width="25" alt="Lino Steffen Icon">
         </div>
@@ -54,10 +52,13 @@
         <div class="intersect">
             <h1>Was ich euch bieten kann</h1>
             <p>
-                Ich arbeite mit Grosswinkelkameras und Drohnen
+                Ich lege großen Wert darauf, dass wir gemeinsam eine angenehme Arbeitsatmosphäre schaffen
             </p>
             <p>
-
+                Mit erstklassigem Equipment<br> einschließlich hochauflösender Weitwinkelkameras und Drohnen<br> setze ich Aufnahmen perfekt in Szene
+            </p>
+            <p> 
+                Dank meiner umfassenden Projekterfahrung gelingen mir vielseitige Aufnahmen.
             </p>
             <img class="ls-icon" src=/icon.png width="25" alt="Lino Steffen Icon">
         </div>
