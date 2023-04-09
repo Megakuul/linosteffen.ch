@@ -13,6 +13,10 @@
 	const firstParam = urlParams.entries().next().value;	
 	let ActivePage = firstParam ? firstParam[0] : null;
 
+	// The buffer stores the last visited Route
+	// With that the page does not get scrolled if the user reloads the page
+	let ActivePageBuf;
+
 	let trailerOpacity;
 
 	let navbarStore = {
@@ -41,9 +45,12 @@
 	const setActivePage = (page) => {
 		navbarStore.NavbarState = false;
 		
+		ActivePageBuf = ActivePage;
 		ActivePage = page;
 		window.history.pushState({}, '', `?${page}`);
 		loadPageComponent(ActivePage);
+		if (ActivePageBuf != ActivePage)
+			window.scrollTo(0, 0);
 	};
 
 	const loadPageComponent = (activePage) => {

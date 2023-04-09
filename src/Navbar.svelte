@@ -50,8 +50,9 @@
 <style>
     /* Navigation Bar */
     .nav-bar {
-        z-index: 8;
+        z-index: 10;
         position: fixed;
+        top: 0;
         height: 70px;
         width: 100%;
         background-color: #16181a;

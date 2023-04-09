@@ -1,22 +1,36 @@
 <script>
+  /**
+   * Source of the Image
+   */
   export let src;
+  /**
+   * Function to execute when the element gets registered
+   * 
+   * Used to add the Element to the LazyLoader when it is registered
+   */
   export let registerElement;
 
-  let imageElement;
+  /**
+   * Maximum height for an Image if it is not in enlarged mode
+   */
+  export let imageMHeight;
 
   let enlarged = false;
 
-  let fitMode = 'contained';
-
+  //This function is enlarging the Image (and reseting the fitMode)
   const resizeImage = () => {
     fitMode = 'contained';
     enlarged = !enlarged;
   }
 
+  //This function opens the Image in a new Tab
   const openImage = () => {
     window.open(src, "_blank");
   }
 
+  let fitMode = 'contained';
+
+  //This function is there to toggle between the screen fit modes
   const toggleObjectFit = () => {
     switch (fitMode) {
       case 'contained':
@@ -31,14 +45,17 @@
     }
   }
 
+  let image;
+
+  //This function will load the image when the element is loaded (not when building the DOM)
   const loadElement = () => {
-    imageElement.src = src;
+    image.src = src;
   }
 </script>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div class="base-image" class:enlarged on:click={resizeImage}>
-    <img alt="Click to enlarge" class={fitMode} bind:this={imageElement} on:loadElement={loadElement} use:registerElement>
+    <img alt="Click to enlarge" class={fitMode} style="--ImageMHeight: {imageMHeight}px" bind:this={image} on:loadElement={loadElement} use:registerElement>
 
     <div class="mode-bar">
         <div class="mode-btn" title="Change fit-mode" on:click|stopPropagation={toggleObjectFit}>
@@ -68,7 +85,7 @@
     }
 
     .base-image:not(.enlarged) img {
-        max-height: 300px;
+        max-height: var(--ImageMHeight);
     }
 
     .base-image:not(.enlarged) img:hover {
@@ -144,5 +161,4 @@
         justify-content: space-around;
         align-items: center;
     }
-    
 </style>

@@ -28,47 +28,54 @@
     <path class="shape-fill" d="M0,70L48,70C96,70,192,70,288,68.3C384,67,480,63,576,65C672,67,768,73,864,71.7C960,70,1056,60,1152,60C1248,60,1344,70,1440,76.7C1536,83,1632,87,1728,78.3C1824,70,1920,50,2016,41.7C2112,33,2208,37,2304,45C2400,53,2496,67,2592,65C2688,63,2784,47,2880,46.7C2976,47,3072,63,3168,61.7C3264,60,3360,40,3456,33.3C3552,27,3648,33,3744,41.7C3840,50,3936,60,4032,53.3C4128,47,4224,23,4320,11.7C4416,0,4512,0,4608,0C4704,0,4800,0,4896,3.3C4992,7,5088,13,5184,28.3C5280,43,5376,67,5472,75C5568,83,5664,77,5760,73.3C5856,70,5952,70,6048,66.7C6144,63,6240,57,6336,60C6432,63,6528,77,6624,68.3C6720,60,6816,30,6864,15L6912,0L6912,100L6864,100C6816,100,6720,100,6624,100C6528,100,6432,100,6336,100C6240,100,6144,100,6048,100C5952,100,5856,100,5760,100C5664,100,5568,100,5472,100C5376,100,5280,100,5184,100C5088,100,4992,100,4896,100C4800,100,4704,100,4608,100C4512,100,4416,100,4320,100C4224,100,4128,100,4032,100C3936,100,3840,100,3744,100C3648,100,3552,100,3456,100C3360,100,3264,100,3168,100C3072,100,2976,100,2880,100C2784,100,2688,100,2592,100C2496,100,2400,100,2304,100C2208,100,2112,100,2016,100C1920,100,1824,100,1728,100C1632,100,1536,100,1440,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z"></path>
 </svg>
 <!-- Generated with softr.io -->
-  
-<Intersector>
-    <div class="main-container" style="margin-top: 0;">
-        <div class="intersect">
+
+<div class="main-container-outer" style="margin-top: 0;">
+    <div class="main-container-inner">
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
             <h1>Willkommen</h1>
-            <p>
-                Willkommen bei Lino Steffen
-            </p>
-            <p>
-                Ihrem passionierten Video Creator und Fotografen aus Burgdorf in Bern
-            </p>
-            <p>
-                Erleben Sie die Welt durch meine Linse und entdecken Sie neue Perspektiven
-            </p>
+        </Intersector>
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
+            <p>Willkommen bei Lino Steffen</p>
+        </Intersector>
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
+            <p>Ihrem passionierten Video Creator und Fotografen aus Burgdorf in Bern</p>
+        </Intersector>
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
+            <p>Erleben Sie die Welt durch meine Linse und entdecken Sie neue Perspektiven</p>
+        </Intersector>
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
             <img class="ls-icon" src=/icon.png width="25" alt="Lino Steffen Icon">
-        </div>
+        </Intersector>
     </div>
-</Intersector>
+</div>
 
-<Intersector>
-    <div class="main-container">
-        <div class="intersect">
+
+<div class="main-container-outer">
+    <div class="main-container-inner">
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
             <h1>Was ich euch bieten kann</h1>
-            <p>
-                Ich lege großen Wert darauf, dass wir gemeinsam eine angenehme Arbeitsatmosphäre schaffen
-            </p>
-            <p>
-                Mit erstklassigem Equipment<br> einschließlich hochauflösender Weitwinkelkameras und Drohnen<br> setze ich Aufnahmen perfekt in Szene
-            </p>
-            <p> 
-                Dank meiner umfassenden Projekterfahrung gelingen mir vielseitige Aufnahmen.
-            </p>
+        </Intersector>
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
+            <p>Ich lege großen Wert darauf, dass wir gemeinsam eine angenehme Arbeitsatmosphäre schaffen</p>
+        </Intersector>
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
+            <p>Mit erstklassigem Equipment<br> einschließlich hochauflösender Weitwinkelkameras und Drohnen<br> setze ich Aufnahmen perfekt in Szene</p>
+        </Intersector>
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
+            <p>Dank meiner umfassenden Projekterfahrung gelingen mir vielseitige Aufnahmen.</p>
+        </Intersector>
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
             <img class="ls-icon" src=/icon.png width="25" alt="Lino Steffen Icon">
-        </div>
+        </Intersector>
     </div>
-</Intersector>
+</div>
 
-<Intersector>
-    <div class="main-container">
-        <div class="intersect">
+<div class="main-container-outer">
+    <div class="main-container-inner">
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
             <h1>Partners in Success</h1>
+        </Intersector>
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
             <div class="sponsor-list">
                 {#each sponsors as sponsor}
                     <a href="{sponsor.lnk}">
@@ -78,10 +85,12 @@
                     </a>
                 {/each}
             </div>
+        </Intersector>
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
             <img class="ls-icon" src=/icon.png width="25" alt="Lino Steffen Icon">
-        </div>    
-    </div>
-</Intersector> 
+        </Intersector>
+    </div>    
+</div>
 
 
 <style>
@@ -164,44 +173,38 @@
     .shape-fill {
         fill: white;
         opacity: 1;
-    } 
-
-    .intersecting div .intersect {
-        width: 80%;
-        transform: scale(1);
     }
 
-    .main-container {
+    .main-container-outer {
         width: 100%;
         z-index: 4;
         overflow: hidden;
-        display: grid;
-        align-content: center;
-        place-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .main-container h1 {
-        margin-bottom: 20vh;
-    }
-
-    .main-container p {
-        margin-top: 10vh;
-    }
-
-    .main-container > div > .ls-icon {
-        filter: invert(1);
-    }
-
-    .main-container > div {
+    .main-container-inner {
         padding: 20px;
         text-align: center;
         margin: 20vh 0 20vh 0;
         transition: all ease 2s;
-        width: 70%;
-        transform: scale(0.7);
+        width: 90%;
     }
 
-    .main-container .sponsor-list {
+    .main-container-outer h1 {
+        margin-bottom: 20vh;
+    }
+
+    .main-container-outer p {
+        margin-top: 10vh;
+    }
+
+    .main-container-outer .ls-icon {
+        filter: invert(1);
+    }
+
+    .main-container-outer .sponsor-list {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -211,12 +214,12 @@
         margin-bottom: 10vh;
     }
 
-    .main-container .sponsor-list .sponsor-bx {
+    .main-container-outer .sponsor-list .sponsor-bx {
         padding: 25px;
         transition: all ease 1s;
     }
 
-    .main-container .sponsor-list img {
+    .main-container-outer .sponsor-list img {
         width: 150px;
     }
 

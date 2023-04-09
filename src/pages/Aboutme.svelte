@@ -13,43 +13,39 @@
     });
 </script>
 
-<Intersector>
-    <div class="main-container" style="margin-top: 0;">
-        <div class="intersect">
+<div class="main-container-outer">
+    <div class="main-container-inner">
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
             <h1>Über mich</h1>
-            <p>
-                Ich bin Lino Steffen
-            </p>
+        </Intersector>
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
+            <p>Ich bin Lino Steffen</p>
+        </Intersector>
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
             <div class="portrait-bx">
                 <img class="portrait" src="/assets/portrait.png" alt="Lino Steffen Portrait">
             </div>
-            <p>
-                Telefon: +41 77 498 87 23<br>
-                Email: info@linosteffen.ch
-            </p>
-            <p>
-                Ich erstelle kreative Werbevideos, Filme oder Fotos<br>für einzigartige Momente
-            </p>
-            <p>
-                Bei Interesse meldet euch direkt per Mail<br>
-                Ich freue mich auf eine gute Zusammenarbeit                
-            </p>
+        </Intersector>
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
+            <p>Telefon: +41 77 498 87 23<br>Email: info@linosteffen.ch</p>
+        </Intersector>
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
+            <p>Ich erstelle kreative Werbevideos, Filme oder Fotos<br>für einzigartige Momente</p>
+        </Intersector>
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
+            <p>Bei Interesse meldet euch direkt per Mail<br>Ich freue mich auf eine gute Zusammenarbeit</p>
+        </Intersector>
+        <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
             <img class="ls-icon" src=/icon.png width="25" alt="Lino Steffen Icon">
-        </div>
-    </div>
-</Intersector>
+        </Intersector>
+    </div>    
+</div>
 
 
 <Timeline timelineconfiguration={timelineConfig}/>
 
 <style>
-
-    .intersecting div .intersect {
-        width: 80%;
-        transform: scale(1);
-    }
-
-    .main-container {
+    .main-container-outer {
         width: 100%;
         z-index: 4;
         overflow: hidden;
@@ -58,45 +54,44 @@
         place-items: center;
     }
 
-    .main-container h1 {
+    .main-container-outer h1 {
         margin-bottom: 10vh;
     }
 
-    .main-container p {
+    .main-container-outer p {
         margin-top: 5vh;
     }
 
-    .main-container > div > .ls-icon {
+    .main-container-outer .ls-icon {
         filter: invert(1);
     }
 
-    .main-container > div {
+    .main-container-inner {
         padding: 20px;
         text-align: center;
         margin: 10vh 0 20vh 0;
         transition: all ease 2s;
         width: 70%;
-        transform: scale(0.7);
     }
 
-    .main-container .portrait-bx {
+    .main-container-outer .portrait-bx {
         display: flex;
         justify-content: center;
     }
 
-    .main-container .portrait {
+    .main-container-outer .portrait {
         height: 500px;
         transition: all ease 1s;
         opacity: 0.8;
     }
 
-    .main-container .portrait:hover {
+    .main-container-outer .portrait:hover {
         opacity: 1;
         filter: drop-shadow(0 -5px 5px rgba(255, 255, 255, 0.5));
     }
 
     @media screen and (max-width: 1100px) {
-        .main-container .portrait {
+        .main-container-outer .portrait {
             height: 300px;
         }
     }

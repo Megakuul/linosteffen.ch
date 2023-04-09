@@ -7,11 +7,9 @@
     {#each timelineconfiguration as item}
         <h2 class="timeline-item-year">{item.year}</h2>
         <div class="timeline-item">
-            <Intersecting>
-                <div class="timeline-intersected">
-                    <img src="{item.image}" alt="{item.alt}" style="max-width: 100%;">
-                    <h3 class="timeline-title">{item.content}</h3>
-                </div>
+            <Intersecting styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 2s;">
+                <img src="{item.image}" alt="{item.alt}" style="max-width: 100%;">
+                <h3 class="timeline-title">{item.content}</h3>
             </Intersecting>
         </div>
   {/each}
@@ -57,6 +55,10 @@
         padding: 1rem;
 
         clear: both;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .timeline-item:after, .timeline-item:before {
@@ -95,18 +97,6 @@
             border-color: transparent transparent white white;
         }
         /* Selects every 2nd element */
-    }
-
-    .timeline-intersected {
-        scale: 0.7;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: all ease 2s;
-    }
-
-    .timeline-item .intersecting .timeline-intersected {
-        scale: 1;
     }
 
     .timeline-item-year {
