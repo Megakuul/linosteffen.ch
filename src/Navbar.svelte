@@ -30,19 +30,19 @@
     <div id="nav-main" class="nav-main">
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <div id="Home" class="nav-item" on:click={() => setActivePage('Home')}>
-          Home
+            Home
         </div>
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <div id="Projekte" class="nav-item" on:click={() => setActivePage('Projekte')}>
-          Projekte
+            Projekte
         </div>
         <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <div id="Medien" class="nav-item" on:click={() => setActivePage('Medien')}>
-          Medien
+        <div id="Galerie" class="nav-item" on:click={() => setActivePage('Galerie')}>
+            Galerie
         </div>
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <div id="About" class="nav-item" on:click={() => setActivePage('About')}>
-          About
+            About
         </div>
     </div>
 </div>

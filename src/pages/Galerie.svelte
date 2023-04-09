@@ -1,12 +1,14 @@
-<script lang="ts">
+<script lang="ts" defer>
     import { onMount } from "svelte";
     import InteractiveImage from "./lib/InteractiveImage.svelte";
+    import Intersector from "./lib/Intersecting.svelte";
+    import Citation from "./lib/Citation.svelte";
 
     let galleryConfig = [];
 
     //Loads the Configuration file
     onMount(async () => {
-        const response = await fetch("/medien.json");
+        const response = await fetch("/gallery.json");
         galleryConfig = await response.json();
     });
 
@@ -54,51 +56,81 @@
 };
 </script>
 
-<div class="gallery">
-    {#each galleryConfig as section}
-        {#each section.content as image}
-            {#if image.iframe}
-                <div class="iframe-container">
-                    <iframe
-                        use:addIframeToLazyloader
-                        width="100%"
-                        height="100%"
-                        title=""
-                        data-src="https://www.youtube.com/embed/{image.youtubeid}"
-                        frameborder="0"
-                        allowfullscreen
-                        style="cursor: pointer; z-index: 8; position: relative;"
-                    ></iframe>
-                    <div class="placeholder">
-                        <i class="fab fa-youtube"></i>
-                    </div>
-                </div>
-            {:else}
-                <InteractiveImage src={image.src} registerElement={addToLazyloader} imageMHeight=300 />
-            {/if}
-        {/each}
-    {/each}
+<div id="title">
+    <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
+        <h1>Galerie</h1>
+        <Citation content="Mein Ziel ist es, die Welt durch die Bearbeitung so zu präsentieren wie ich sie sehe" author="Lino Steffen"/>
+    </Intersector>
 </div>
+
+{#each galleryConfig as section}
+    <h2>{section.title}</h2>
+    <hr>
+    <div class="gallery-inner">
+        {#each section.content as image}
+            <Intersector styleOnDefault="opacity: 0.2;" styleOnIntersect="opacity: 1;" transition="all ease 1s">
+                {#if image.iframe}
+                    <div class="iframe-container">
+                        <iframe
+                            use:addIframeToLazyloader
+                            width="100%"
+                            height="100%"
+                            title=""
+                            data-src="https://www.youtube.com/embed/{image.youtubeid}"
+                            frameborder="0"
+                            allowfullscreen
+                            style="cursor: pointer; z-index: 8; position: relative;"
+                        ></iframe>
+                        <div class="placeholder">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                {:else}
+                    <InteractiveImage src={image.src} registerElement={addToLazyloader} imageMHeight=300 />
+                {/if}
+            </Intersector>
+        {/each}
+    </div>
+{/each}
 
 
 <style>
-    .gallery {
+
+    #title {
+        margin-top: 100px;
+        margin-bottom: 10vh;
+    }
+
+    #title h1 {
+        margin-bottom: 10vh;
+    }
+
+    hr {
+        opacity: 0.2;
+        
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+
+    .gallery-inner {
         margin: 5%;
-        overflow: hidden;
+        margin-bottom: 20vh;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
         align-items: center;
+        overflow: hidden;
     }
 
-    .gallery > * {
+    .gallery-inner > * {
         margin: 20px;
     }
 
     .iframe-container {
         position: relative;
-        width: 533px;
+        max-width: 533px;
         height: 300px;
     }
 

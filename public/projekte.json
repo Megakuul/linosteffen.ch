@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Die Wette",
+        "date": "2023",
+        "subtitle": "In dem Kurzfilm 'Die Wette' geht es darum, ob wir wirklich ständig an unserem Handy kleben müssen, vor allem die Jugendlichen. Die Geschichte zeigt, was wir alles verpassen können, wenn wir uns nur noch auf den Bildschirm konzentrieren.",
+        "redirect": "https://diewette.linosteffen.ch/",
+        "image": "/assets/projekte/diewette.jpeg",
+        "alt": "Die Wette image"
+    },
+    {
+        "title": "Domaine de l'Enfer",
+        "date": "2020 - 2022",
+        "subtitle": "Von der Traube bis zum Wein\nDokumentation für einen Weinbauern aus dem Wallis",
+        "redirect": "https://linosteffen.webflow.io/projekte/rotenweine",
+        "image": "/assets/projekte/domaindelenfer.jpeg",
+        "alt": "Domain de L'Enfer image"
+    },
+    {
+        "title": "Aare Roadtrip",
+        "date": "Herbst 2021",
+        "subtitle": "Aare\nVon der Quelle bis zur Mündung",
+        "redirect": "https://youtu.be/03Sh9cjsQPI",
+        "image": "/assets/projekte/aareroadtrip.jpeg",
+        "alt": "Aare Roadtrip image"
+    }
+]

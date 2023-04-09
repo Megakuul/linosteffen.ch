@@ -4,7 +4,7 @@
 	import Footer from './Footer.svelte';
 	import Home from './pages/Home.svelte';
 	import Projekte from './pages/Projekte.svelte';
-	import Medien from './pages/Medien.svelte';
+	import Galerie from './pages/Galerie.svelte';
 	import About from './pages/Aboutme.svelte';
 	import Impressum from './pages/Impressum.svelte';
     import Trailer from './pages/lib/Trailer.svelte';
@@ -59,8 +59,8 @@
 			return Home;
 			case 'Projekte':
 			return Projekte;
-			case 'Medien':
-			return Medien;
+			case 'Galerie':
+			return Galerie;
 			case 'About':
 			return About;
 			case 'Impressum':
