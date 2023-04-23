@@ -20,10 +20,10 @@
 {#each projekteConfig as section}
     <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
         <div class="project-inner">
-            <div class="project-img-container">
+            <!-- svelte-ignore a11y-click-events-have-key-events -->
+            <div class="project-img-container" on:click={() => window.open(section.redirect, "_blank")}>
                 <h1 class="project-img-overlay">{section.title}</h1>
-                <!-- svelte-ignore a11y-click-events-have-key-events -->
-                <img class="project-img" src="{section.image}" alt="{section.alt}" on:click={() => window.open(section.redirect, "_blank")}>
+                <img class="project-img" src="{section.image}" alt="{section.alt}">
             </div>
             <h2 class="project-date">{section.date}</h2>
             <p class="project-subtitle">{section.subtitle}</p>
