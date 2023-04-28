@@ -3,6 +3,7 @@
     import InteractiveImage from "./lib/InteractiveImage.svelte";
     import Intersector from "./lib/Intersecting.svelte";
     import Citation from "./lib/Citation.svelte";
+    import Placeholder from "./lib/Placeholder.svelte";
 
     let galleryConfig = [];
 

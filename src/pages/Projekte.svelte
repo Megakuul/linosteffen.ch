@@ -91,11 +91,6 @@
         opacity: 1;
     }
 
-    .project-title {
-        text-align: center;
-        font-family: 'Raleway', sans-serif;
-    }
-
     .project-date {
         text-align: center;
         font-family: 'Raleway', sans-serif;
