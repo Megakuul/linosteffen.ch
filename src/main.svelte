@@ -8,6 +8,7 @@
 	import About from './pages/Aboutme.svelte';
 	import Impressum from './pages/Impressum.svelte';
     import Trailer from './pages/lib/Trailer.svelte';
+    import Placeholder from './pages/lib/Placeholder.svelte';
 
 	const urlParams = new URLSearchParams(window.location.search);	
 	const firstParam = urlParams.entries().next().value;	
@@ -47,7 +48,7 @@
 		
 		ActivePageBuf = ActivePage;
 		ActivePage = page;
-		window.history.pushState({}, '', `?${page}`);
+		window.location.assign(`?${page}`);
 		loadPageComponent(ActivePage);
 		if (ActivePageBuf != ActivePage)
 			window.scrollTo(0, 0);

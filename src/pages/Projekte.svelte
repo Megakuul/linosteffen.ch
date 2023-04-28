@@ -1,6 +1,7 @@
 <script lang="ts">
     import { onMount } from "svelte";
     import Intersector from "./lib/Intersecting.svelte";
+    import Placeholder from "./lib/Placeholder.svelte";
     let projekteConfig = [];
 
     //Loads the Configuration file
@@ -10,6 +11,8 @@
     });
 
 </script>
+
+<Placeholder />
 
 <div id="title">
     <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">

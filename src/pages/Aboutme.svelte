@@ -3,6 +3,7 @@
     import Intersector from './lib/Intersecting.svelte'
     import Hoverable from './lib/Hoverable.svelte';
     import Timeline from './lib/Timeline.svelte';
+    import Placeholder from './lib/Placeholder.svelte';
 
 
     let timelineConfig = [];
@@ -12,6 +13,8 @@
         timelineConfig = await response.json();
     });
 </script>
+
+<Placeholder />
 
 <div class="main-container-outer">
     <div class="main-container-inner">
