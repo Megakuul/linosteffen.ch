@@ -23,7 +23,7 @@
 <Placeholder />
 
 <div id="title">
-    <Title text="Lino Steffen"/>
+    <Title text="Lino Steffen" charCount="9" writedelay="30" writechardelay="15"/>
 </div>
 
 <!-- Generated with softr.io -->
@@ -45,7 +45,7 @@
             <h1>Willkommen</h1>
         </Intersector>
         <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
-            <p>Willkommen bei Lino Steffen</p>
+            <p>Willkommen bei Lino Stefan</p>
         </Intersector>
         <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
             <p>Ihrem passionierten Video Creator und Fotografen aus Burgdorf in Bern</p>

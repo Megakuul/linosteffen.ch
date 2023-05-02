@@ -1,5 +1,9 @@
 <script lang="ts">
   export let text;
+  export let charCount;
+  export let writedelay;
+  export let writechardelay;
+
   let contentArray = [];
 
   const texts = text.split('');
@@ -41,7 +45,7 @@
     }
   };
 
-  animate(8, 50, 30);
+  animate(charCount, writedelay, writechardelay);
 </script>
 
 <div class="title">
