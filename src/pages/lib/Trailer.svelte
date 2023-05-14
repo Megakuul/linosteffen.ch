@@ -27,7 +27,7 @@
 
 <style>
     #trailer {
-        z-index: 0;
+        z-index: -500;
         position: fixed;
         opacity: 0;
         left: 20px;
@@ -35,7 +35,7 @@
     }
     
     #inner-trailer {
-        z-index: 0;
+        z-index: -500;
         height: 120px;
         width: 120px;
         background-image: linear-gradient(to right, white, blue);

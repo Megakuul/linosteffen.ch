@@ -45,13 +45,13 @@
             <h1>Willkommen</h1>
         </Intersector>
         <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
-            <p>Willkommen bei Lino Stefan</p>
+            <p>Ich bin Lino Steffen</p>
         </Intersector>
         <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
-            <p>Ihrem passionierten Video Creator und Fotografen aus Burgdorf in Bern</p>
+            <p>Ihr <Hoverable text="Video Creator" gifsrc="/assets/hover/videocreator.gif" color="blue" alt="Video Creator gif"/> und <Hoverable text="Fotograf" gifsrc="/assets/hover/pingu.gif" color="red" alt="Fotograf gif"/> aus Burgdorf in Bern</p>
         </Intersector>
         <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
-            <p>Erleben Sie die Welt durch meine Linse und entdecken Sie neue Perspektiven</p>
+            <p>Erleben Sie die Welt durch meine <Hoverable text="Linse" gifsrc="/assets/hover/lens.gif" color="green" alt="Linse gif"/> und entdecken Sie neue Perspektiven</p>
         </Intersector>
         <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
             <img class="ls-icon" src=/icon.png width="25" alt="Lino Steffen Icon">
@@ -66,13 +66,13 @@
             <h1>Was ich euch bieten kann</h1>
         </Intersector>
         <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
-            <p>Ich lege großen Wert darauf, dass wir gemeinsam eine angenehme Arbeitsatmosphäre schaffen</p>
+            <p>Mein professionelles Arbeiten bleibt auch unter <Hoverable text="Druck" gifsrc="/assets/hover/fine.gif" color="orange" alt="gif unter druck"/> stabil</p>
         </Intersector>
         <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
-            <p>Mit erstklassigem Equipment<br> einschließlich hochauflösender Weitwinkelkameras und Drohnen<br> setze ich Aufnahmen perfekt in Szene</p>
+            <p>Motivation und Kreativität stehen im Mittelpunkt meiner Arbeit</p>
         </Intersector>
         <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
-            <p>Dank meiner umfassenden Projekterfahrung gelingen mir vielseitige Aufnahmen.</p>
+            <p>Offene und transparente <Hoverable text="Kommunikation" gifsrc="/assets/hover/komunikation.gif" color="purple" alt="gif komunikation"/> ist der Schlüssel zum Erfolg</p>
         </Intersector>
         <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
             <img class="ls-icon" src=/icon.png width="25" alt="Lino Steffen Icon">

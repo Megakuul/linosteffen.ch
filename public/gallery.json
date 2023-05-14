@@ -3,20 +3,12 @@
         "title": "Portraits",
         "content": [
             {
-              "src": "/assets/timeline/2021.jpeg",
+              "src": "/assets/gallery/portrait/IMG_0011.jpg",
               "iframe": false
             },
             {
-              "youtubeid": "YaEG2aWJnZ8",
-              "iframe": true
-            },
-            {
-              "src": "/assets/timeline/2008.jpeg",
+              "src": "/assets/gallery/portrait/A7309039.jpg",
               "iframe": false
-            },
-            {
-              "youtubeid": "YaEG2aWJnZ8",
-              "iframe": true
             }
         ]
     },
@@ -24,20 +16,20 @@
         "title": "Autos",
         "content": [
             {
-              "src": "/assets/timeline/2021.jpeg",
+              "src": "/assets/gallery/car/A7300978.jpg",
               "iframe": false
             },
             {
-              "youtubeid": "YaEG2aWJnZ8",
-              "iframe": true
-            },
-            {
-              "src": "/assets/timeline/2008.jpeg",
+              "src": "/assets/gallery/car/A7309079.jpg",
               "iframe": false
             },
             {
-              "youtubeid": "YaEG2aWJnZ8",
-              "iframe": true
+              "src": "/assets/gallery/car/IMG_2485.jpg",
+              "iframe": false
+            },
+            {
+              "src": "/assets/gallery/car/IMG_8211.jpg",
+              "iframe": false
             }
         ]
     },
@@ -45,20 +37,20 @@
         "title": "Flugzeuge",
         "content": [
             {
-              "src": "/assets/timeline/2021.jpeg",
+              "src": "/assets/gallery/plane/A7308657.jpg",
               "iframe": false
             },
             {
-              "youtubeid": "YaEG2aWJnZ8",
-              "iframe": true
-            },
-            {
-              "src": "/assets/timeline/2008.jpeg",
+              "src": "/assets/gallery/plane/IMG_1001.jpg",
               "iframe": false
             },
             {
-              "youtubeid": "YaEG2aWJnZ8",
-              "iframe": true
+              "src": "/assets/gallery/plane/A7308845.jpg",
+              "iframe": false
+            },
+            {
+              "src": "/assets/gallery/plane/A7303515.jpg",
+              "iframe": false
             }
         ]
     },
@@ -66,20 +58,28 @@
         "title": "Landschaften",
         "content": [
             {
-              "src": "/assets/timeline/2021.jpeg",
+              "src": "/assets/gallery/landscape/A7303431.jpg",
               "iframe": false
             },
             {
-              "youtubeid": "YaEG2aWJnZ8",
-              "iframe": true
-            },
-            {
-              "src": "/assets/timeline/2008.jpeg",
+              "src": "/assets/gallery/landscape/IMG_8371.jpg",
               "iframe": false
             },
             {
-              "youtubeid": "YaEG2aWJnZ8",
-              "iframe": true
+              "src": "/assets/gallery/landscape/DJI_0102.jpg",
+              "iframe": false
+            },
+            {
+              "src": "/assets/gallery/landscape/IMG_7770.jpg",
+              "iframe": false
+            },
+            {
+              "src": "/assets/gallery/landscape/DJI_0399.jpg",
+              "iframe": false
+            },
+            {
+              "src": "/assets/gallery/landscape/DSC03412.jpg",
+              "iframe": false
             }
         ]
     },
@@ -87,20 +87,24 @@
         "title": "Luftaufnahmen",
         "content": [
             {
-              "src": "/assets/timeline/2021.jpeg",
+              "src": "/assets/gallery/drone/DJI_0012.jpg",
               "iframe": false
             },
             {
-              "youtubeid": "YaEG2aWJnZ8",
-              "iframe": true
-            },
-            {
-              "src": "/assets/timeline/2008.jpeg",
+              "src": "/assets/gallery/drone/DJI_0562.jpg",
               "iframe": false
             },
             {
-              "youtubeid": "YaEG2aWJnZ8",
-              "iframe": true
+              "src": "/assets/gallery/drone/DJI_0151.s_w.jpg",
+              "iframe": false
+            },
+            {
+              "src": "/assets/gallery/drone/DJI_0133.jpg",
+              "iframe": false
+            },
+            {
+              "src": "/assets/gallery/drone/DJI_0029.jpg",
+              "iframe": false
             }
         ]
     },
@@ -108,61 +112,119 @@
         "title": "Tiere",
         "content": [
             {
-              "src": "/assets/timeline/2021.jpeg",
+              "src": "/assets/gallery/animal/A7301419.jpg",
               "iframe": false
             },
             {
-              "youtubeid": "YaEG2aWJnZ8",
-              "iframe": true
-            },
-            {
-              "src": "/assets/timeline/2008.jpeg",
+              "src": "/assets/gallery/animal/DSC03207.jpg",
               "iframe": false
             },
             {
-              "youtubeid": "YaEG2aWJnZ8",
-              "iframe": true
+              "src": "/assets/gallery/animal/A7302359.jpg",
+              "iframe": false
+            },
+            {
+              "src": "/assets/gallery/animal/A7309018.jpg",
+              "iframe": false
             }
         ]
     },
     {
-        "title": "Momentaufnahmen",
+        "title": "City",
         "content": [
             {
-              "src": "/assets/timeline/2021.jpeg",
+              "src": "/assets/gallery/city/A7303289.jpg",
               "iframe": false
             },
             {
-              "youtubeid": "YaEG2aWJnZ8",
-              "iframe": true
-            },
-            {
-              "src": "/assets/timeline/2008.jpeg",
+              "src": "/assets/gallery/city/A7303308.jpg",
               "iframe": false
             },
             {
-              "youtubeid": "YaEG2aWJnZ8",
-              "iframe": true
+              "src": "/assets/gallery/city/A7301441.jpg",
+              "iframe": false
+            },
+            {
+              "src": "/assets/gallery/city/A7309311.jpg",
+              "iframe": false
+            },
+            {
+              "src": "/assets/gallery/city/DJI_0026.jpg",
+              "iframe": false
+            },
+            {
+              "src": "/assets/gallery/city/A7309874.jpg",
+              "iframe": false
             }
         ]
+    },
+    {
+      "title": "Nacht",
+      "content": [
+          {
+            "src": "/assets/gallery/night/A7300511.jpg",
+            "iframe": false
+          },
+          {
+            "src": "/assets/gallery/night/A7300896.jpg",
+            "iframe": false
+          },
+          {
+            "src": "/assets/gallery/night/A7303324.jpg",
+            "iframe": false
+          },
+          {
+            "src": "/assets/gallery/night/A7301969.jpg",
+            "iframe": false
+          }
+      ]
+    },
+    {
+      "title": "Indor",
+      "content": [
+          {
+            "src": "/assets/gallery/indor/IMG_3134.jpg",
+            "iframe": false
+          },
+          {
+            "src": "/assets/gallery/indor/A7301499.jpg",
+            "iframe": false
+          }
+      ]
     },
     {
         "title": "Videos",
         "content": [
             {
-              "src": "/assets/timeline/2021.jpeg",
-              "iframe": false
-            },
-            {
-              "youtubeid": "YaEG2aWJnZ8",
+              "youtubeid": "goUoVSLv7Pk",
               "iframe": true
             },
             {
-              "src": "/assets/timeline/2008.jpeg",
-              "iframe": false
+              "youtubeid": "5jnuOvnoImk",
+              "iframe": true
             },
             {
-              "youtubeid": "YaEG2aWJnZ8",
+              "youtubeid": "BFd93kDhqZI",
+              "iframe": true
+            },
+            {
+              "youtubeid": "ZC26YRnHuGw",
+              "iframe": true
+            },
+            {
+              "youtubeid": "Urv-NoS0htU",
+              "iframe": true
+            },
+            {
+              "youtubeid": "OOvjTP4tybc",
+              "iframe": true
+            },
+            {
+              "youtubeid": "W9V6IyrlyeQ",
+              "iframe": true
+            },
+            {
+              "youtubeid": "uTG3k39KgUE",
               "iframe": true
             }
         ]

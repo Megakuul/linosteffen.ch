@@ -74,13 +74,13 @@
                     <div class="iframe-container">
                         <iframe
                             use:addIframeToLazyloader
-                            width="100%"
-                            height="100%"
+                            width="400px"
+                            height="225px"
                             title=""
                             data-src="https://www.youtube.com/embed/{image.youtubeid}"
                             frameborder="0"
                             allowfullscreen
-                            style="cursor: pointer; z-index: 8; position: relative;"
+                            style="cursor: pointer; z-index: 8; position: relative; color:green"
                         ></iframe>
                         <div class="placeholder">
                             <i class="fab fa-youtube"></i>
@@ -107,8 +107,7 @@
     }
 
     hr {
-        opacity: 0.2;
-        
+        opacity: 0.2; 
         width: 90%;
         margin-top: 20px;
         margin-bottom: 80px;
@@ -125,14 +124,15 @@
         overflow: hidden;
     }
 
-    .gallery-inner > * {
+    .gallery-inner {
         margin: 20px;
     }
 
     .iframe-container {
+        margin-bottom: 50px;
         position: relative;
-        max-width: 533px;
-        height: 300px;
+        max-width: 400px;
+        height: 225px;
     }
 
     .placeholder {

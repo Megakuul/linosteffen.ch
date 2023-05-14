@@ -31,6 +31,12 @@
     },
     {
         "year": "2021",
+        "content": "Mein erster Auftrag mit Kitoko GmbH war der Beginn einer langfristigen Partnerschaft, die bis heute anhält",
+        "image": "/assets/timeline/kitoko.jpg",
+        "alt": "Lino und Kitoko Image"
+    },
+    {
+        "year": "2021",
         "content": "Das Drohnenfliegen wurde zu meiner grossen Leidenschaft",
         "image": "/assets/timeline/2021.jpeg",
         "alt": "Lino 2021 Drohnen Image"
@@ -52,5 +58,11 @@
         "content": "Mein grosser Traum ging in Erfüllung\nSony A7 III",
         "image": "/assets/timeline/2022.jpeg",
         "alt": "Lino 2022 Sony A7 III Image"
+    },
+    {
+        "year": "2023",
+        "content": "Der Kurzfilm «Die Wette», ist nach über einem Jahr Planung und Umsetzung fertig",
+        "image": "/assets/timeline/diewette.jpg",
+        "alt": "Projekt Kurzfilm Die Wette Image"
     }
 ]

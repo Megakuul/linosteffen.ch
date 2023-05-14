@@ -21,6 +21,16 @@
   const resizeImage = () => {
     fitMode = 'contained';
     enlarged = !enlarged;
+    toggleOverflow();
+  }
+
+  const toggleOverflow = () => {
+    const bodyElement = document.querySelector('body');
+    if (enlarged) {
+        bodyElement.style.overflow = 'hidden';
+    } else {
+        bodyElement.style.overflow = 'auto';
+    }
   }
 
   //This function opens the Image in a new Tab
@@ -74,6 +84,7 @@
 <style>
     .base-image {
         z-index: 6;
+        margin-bottom: 50px;
     }
 
     .base-image img {
