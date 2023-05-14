@@ -1,6 +1,5 @@
 <script>
     export let setActivePage;
-    export let toggleTrailerOpacity;
 
     /**
     *This Element represents an object with the NavbarState inside of it
@@ -13,14 +12,14 @@
 	*	    NavbarState: false
 	*};
     *
-    *<Navbar setActivePage="{setActivePage}" toggleTrailerOpacity="{toggleTrailerOpacity}" navbarStateStore="{navbarStore}"/>
+    *<Navbar setActivePage="{setActivePage}" toggleTrailerOpacity="{toggleTrailerOpacity}" navbarStateStore="{navbarStore}"/> 
     *```
     */
     export let navbarStateStore;
 </script>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<img class="nav-ls" src="./icon.png" width="40" height="40" alt="Lino Steffen Logo" on:click={toggleTrailerOpacity}/>
+<img class="nav-ls" src="./icon.png" width="40" height="40" alt="Lino Steffen Logo" on:click={() => setActivePage('Home')}/>
 <div class="nav-bar"></div>
 <input type="checkbox" id="active" bind:checked={navbarStateStore.NavbarState}>
 <label for="active" class="nav-btn"><span></span></label>

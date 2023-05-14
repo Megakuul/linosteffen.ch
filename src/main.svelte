@@ -9,6 +9,9 @@
 	import Impressum from './pages/Impressum.svelte';
     import Trailer from './pages/lib/Trailer.svelte';
     import Placeholder from './pages/lib/Placeholder.svelte';
+    import Domaindelenfer from './pages/projects/Domaindelenfer.svelte';
+    import Aareroadtrip from './pages/projects/Aareroadtrip.svelte';
+    import Deadinthewater from './pages/projects/Deadinthewater.svelte';
 
 	const urlParams = new URLSearchParams(window.location.search);	
 	const firstParam = urlParams.entries().next().value;	
@@ -66,6 +69,12 @@
 			return About;
 			case 'Impressum':
 			return Impressum;
+			case "Domaindelenfer":
+			return Domaindelenfer;
+			case "Aareroadtrip":
+			return Aareroadtrip;
+			case "Deadinthewater":
+			return Deadinthewater;
 			default:
 			return Home;
 		}
@@ -86,12 +95,8 @@
 
 <Trailer opacity={trailerOpacity} />
 
-<Navbar setActivePage="{setActivePage}" toggleTrailerOpacity="{toggleTrailerOpacity}" navbarStateStore="{navbarStore}"/>
+<Navbar setActivePage="{setActivePage}" navbarStateStore="{navbarStore}"/>
   
 <svelte:component this="{loadPageComponent(ActivePage)}" />
 	  
 <Footer setActivePage="{setActivePage}"/>
-
-<style>
-
-</style>

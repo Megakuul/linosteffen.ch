@@ -24,7 +24,7 @@
     <Intersector styleOnDefault="scale: 0.7;" styleOnIntersect="scale: 1;" transition="all ease 1s">
         <div class="project-inner">
             <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <div class="project-img-container" on:click={() => window.open(section.redirect, "_blank")}>
+            <div class="project-img-container" on:click={() => window.location.href=section.redirect}>
                 <h1 class="project-img-overlay">{section.title}</h1>
                 <img class="project-img" src="{section.image}" alt="{section.alt}">
             </div>
