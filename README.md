@@ -1,2 +1,1 @@
-# Original Repository
-https://github.com/Megakuul/linosteffen.ch
+# Official Website from Lino Steffen
