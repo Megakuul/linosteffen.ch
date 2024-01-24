@@ -13,16 +13,14 @@
         }
 
         trailer.animate(keyframes, {
-            duration: 700,
+            duration: 1000,
             fill: "forwards"
         });
     }
 </script>
 
 <div id="trailer" bind:this={trailer} style="--opacity: {opacity / 3}">
-    <div id="inner-trailer">
-
-    </div>
+    <img id="inner-trailer" src="favicon.png" alt="lsfavicon">
 </div>
 
 <style>
@@ -35,14 +33,10 @@
     }
     
     #inner-trailer {
-        z-index: -500;
-        height: 120px;
-        width: 120px;
-        background-image: linear-gradient(to right, white, blue);
-        border-radius: 20px;
-        filter: blur(50px);
+        width: 160px;
+        filter: blur(7px);
 
-        animation: spin 4s linear infinite;
+        animation: spin 3s linear infinite;
     }
 
     :global(body:hover > #trailer) {
@@ -51,10 +45,14 @@
 
     @keyframes spin {
         0% {
-            transform: rotate(0deg);
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.7;
         }
         100% {
-            transform: rotate(360deg);
+            opacity: 1;
         }
     }
+    
 </style>
